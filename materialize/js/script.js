@@ -1,16 +1,5 @@
 /* eslint-disable no-undef */
 document.addEventListener("DOMContentLoaded", function () {
-	
-	// Activate image popup
-	var elem_img = document.querySelectorAll(".materialboxed");
-	console.log(elem_img);
-	M.Materialbox.init(elem_img);
-
-	// Activate sidebar nav
-	var elems = document.querySelectorAll(".sidenav");
-	M.Sidenav.init(elems);
-	loadNav();
-
 	function loadNav() {
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
@@ -31,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 						M.Sidenav.getInstance(sidenav).close();
 		
 						// Muat konten halaman yang dipanggil
-						page = event.target.getAttribute("href").substr(1);
+						let page = event.target.getAttribute("href").substr(1);
 						loadPage(page);
 					});
 				});
@@ -40,12 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		xhttp.open("GET", "nav.html", true);
 		xhttp.send();
 	}
-	
-	
-	// Load page content
-	var page = window.location.hash.substr(1);
-	if (page == "") page = "home";
-	loadPage(page);
 	
 	function loadPage(page) {
 		var xhttp = new XMLHttpRequest();
@@ -64,5 +47,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		xhttp.open("GET", "pages/" + page + ".html", true);
 		xhttp.send();
 	}
+	
+	var elem = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(elem);
+
+	// Activate image popup
+	var elem_img = document.querySelectorAll(".materialboxed");
+	console.log(elem_img);
+	M.Materialbox.init(elem_img);
+
+	// Activate sidebar nav
+	var elems = document.querySelectorAll(".sidenav");
+	M.Sidenav.init(elems);
+	loadNav();
+	
+	// Load page content
+	var page1 = window.location.hash.substr(1);
+	if (page1 == "") page1 = "home";
+	loadPage(page1);
 	
 });

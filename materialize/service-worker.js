@@ -4,7 +4,6 @@ var urlsToCache = [
 	'/nav.html',
 	'/index.html',
 	'/pages/home.html',
-	'/pages/about.html',
 	'/pages/projects.html',
 	'/pages/certifications.html',
 	'/pages/experiences.html',
@@ -12,7 +11,11 @@ var urlsToCache = [
 	'/js/jquery-3.5.1.min.js',
 	'/js/script.js',
 	'/css/materialize.min.css',
-	'/css/styles.css'
+	'/css/styles.css',
+	'/images/icon.png',
+	'/images/android_menengah.png',
+	'/images/android_pemula.png',
+	'/images/web_pemula.png'
 ];
 
 self.addEventListener('install', function(event){
