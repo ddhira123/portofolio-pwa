@@ -19,9 +19,16 @@ const urlsToCache = [
   '/css/styles.css',
   '/css/arrow.css',
   '/images/icon.png',
+  '/images/favicon.png',
   '/images/android_menengah.png',
   '/images/android_pemula.png',
   '/images/web_pemula.png',
+  'https://fonts.googleapis.com/icon?family=Material+Icons',
+  'https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/webfonts/fa-brands-400.woff2',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/webfonts/fa-solid-900.woff2',
+  '/manifest.json',
 ];
 
 self.addEventListener('install', (event) => {
