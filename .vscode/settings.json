@@ -1,0 +1,17 @@
+{
+    "stylelint.enable": true,
+    "stylelint.ignoreDisables": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.stylelint": false
+    },
+    "eslint.validate": ["javascript"],
+    "[javascript]":{
+        "editor.formatOnSave": false
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.debug": true,
+    "prettier.disableLanguages": ["js"],
+}

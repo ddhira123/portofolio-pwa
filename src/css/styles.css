@@ -1,7 +1,40 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    max-width: 100%;
+    overflow: hidden;
+}
+  
+section.home{
+    height: 100vh;
+    display: table;
+}
+
+section.home > .content {
+    vertical-align: middle;
+    display: table-cell;
+    width: 100vw;
+}
+
+section.home > .go-to-two {
+    display: table-row;
+}
+
+section.home > .content > p{
+    font-size: large;
+}
+
 ul.timeline {
     list-style-type: none;
     position: relative;
 }
+
 ul.timeline:before {
     content: ' ';
     background: #d4d9df;
@@ -35,8 +68,27 @@ ul.timeline > li > .card {
     left: 2em;
 }
 
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 @media only screen and (max-width: 600px){
     ul.timeline::before{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    nav .brand-logo {
+        left: 40%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    a.brand-logo{
+        font-size: 5vw;
     }
 }

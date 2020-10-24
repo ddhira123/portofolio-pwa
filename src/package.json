@@ -1,0 +1,36 @@
+{
+  "name": "dhana_playground",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"http://materializecss.com/\">     <img src=\"http://materializecss.com/res/materialize.svg\" width=\"150\">   </a> </p>",
+  "main": "index.html",
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-webpack": "0.11.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "2.1.2",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.6.0"
+  },
+  "scripts": {
+    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx stylelint '**/*.css'"
+  },
+  "author": "Dhana",
+  "license": "ISC"
+}
