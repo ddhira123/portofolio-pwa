@@ -18,6 +18,7 @@ const urlsToCache = [
   '/css/styles.css',
   '/css/arrow.css',
   '/images/icon/icon-512.png',
+  '/images/icon/android-icon-192x192-dunplab-manifest-21625.png',
   '/images/icon/apple-icon-180x180-dunplab-manifest-21625.png',
   '/images/icon/apple-icon-152x152-dunplab-manifest-21625.png',
   '/images/icon/apple-icon-144x144-dunplab-manifest-21625.png',
