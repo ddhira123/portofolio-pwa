@@ -19,5 +19,13 @@
         "eqeqeq": ["warn", "allow-null"],
         "linebreak-style": ["warn", "windows"]
     },
+    "overrides": [
+        {
+          "files": [ "service-worker.js" ],
+          "rules": {
+            "quotes": ["error", "single"]
+          }
+        }
+    ],
     "ignorePatterns": ["jquery-3.5.1.min.js", "materialize.js", "materialize.min.js"]
 }
